@@ -21,19 +21,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
-            <Button
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="120dp"
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:text="New Button"
-                android:id="@+id/button2" />
+                android:id="@+id/colorTile" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Color "
-                android:id="@+id/button" />
+                android:id="@+id/gocolor" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,26 +48,59 @@
                 android:id="@+id/textView3"
                 android:gravity="center" />
 
-            <SeekBar
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/redlabel"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="9dp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
                 android:id="@+id/Red"
                 android:progress="100"
                 android:max="255" />
 
-            <SeekBar
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:id="@+id/Green"
-                android:progress="120"
-                android:max="255" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:id="@+id/greenlabel"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="9dp" />
 
             <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/Green"
+                android:progress="120"
+                android:max="255"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:id="@+id/bluelabel"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="9dp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
                 android:id="@+id/Blue"
                 android:progress="200"
                 android:max="255" />
@@ -85,7 +117,8 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true">
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/button3">
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
@@ -99,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Medium Text"
-                    android:id="@+id/textView2" />
+                    android:id="@+id/rgbvalue" />
 
             </TableRow>
             <TableRow>
@@ -166,42 +199,18 @@
                     android:id="@+id/xyz2" />
 
             </TableRow>
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="HUNTER: "
-                    android:id="@+id/hunter" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/hunter2" />
-
-            </TableRow>
         </TableLayout>
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shades and Tints"
+            android:text="Sombras y Tintes"
             android:id="@+id/button3"
+            android:onClick="llamaSombras"
             android:layout_alignParentBottom="true" />
 
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="More Colors"
-            android:id="@+id/button4"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false" />
     </RelativeLayout>
 
 </LinearLayout>

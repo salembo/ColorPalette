@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.studyjam.android.colorpalette.TilesShadesActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/colorBlock" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/labelcol"
+        android:gravity="center"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sombras"
+        android:gravity="center"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/uno" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lu"
+             />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/dos"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/ld"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tres" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lt"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/cuatro" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lc"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/cinco" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lci"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/seis" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:textSize="8sp"
+            android:singleLine="true"
+            android:id="@+id/lse"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/siete" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/ls"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/ocho" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lo"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/nueve" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/ln"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/diez" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/ldi"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/once" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:layout_gravity="bottom"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:textSize="8sp"
+            android:id="@+id/lon"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tintes"
+        android:gravity="center"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tuno" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tdos" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/ttres" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tcuatro" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tcinco" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tseis" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tsiete" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tocho" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:text="color"
+            android:id="@+id/tnueve" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="boton"
+            android:layout_weight="1"
+            android:id="@+id/tdiez" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="boton"
+            android:id="@+id/tonce" />
+
+    </LinearLayout>
+
+</LinearLayout>
