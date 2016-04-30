@@ -17,14 +17,12 @@
         android:gravity="center"
         android:id="@+id/colorBlock" />
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/labelcol"
-        android:gravity="center"
-        android:textSize="12dp"
-        />
+        android:id="@+id/button"
+        android:onClick="llamaSombras"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="match_parent"

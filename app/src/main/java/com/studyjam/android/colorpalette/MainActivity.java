@@ -50,9 +50,20 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         cmykValue=(TextView) findViewById(R.id.cmyk2);
         xyzValue=(TextView)findViewById(R.id.xyz2);
 
-        RED=redBar.getProgress();
-        GREEN=greenBar.getProgress();
-        BLUE=greenBar.getProgress();
+        Bundle bundle=getIntent().getExtras();
+        if(null!=bundle){
+            RED=bundle.getInt("RED");
+            GREEN=bundle.getInt("GREEN");
+            BLUE=bundle.getInt("BLUE");
+
+        }else{
+
+            RED=redBar.getProgress();
+            GREEN=greenBar.getProgress();
+            BLUE=greenBar.getProgress();
+        }
+
+
         redlabel.setText("Rojo: "+RED);
         greenlabel.setText("Verde: "+GREEN);
         bluelabel.setText("Azul: "+BLUE);

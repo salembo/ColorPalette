@@ -1,17 +1,19 @@
 package com.studyjam.android.colorpalette;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class TilesShadesActivity extends AppCompatActivity {
-    static int RED=0;
-    static int GREEN=0;
-    static int BLUE=0;
+    static int RED=-1;
+    static int GREEN=-1;
+    static int BLUE=-1;
     View tileShade;
-    TextView labelcol;
+    Button labelcol;
     View uno;
     View dos;
     View tres;
@@ -61,7 +63,7 @@ public class TilesShadesActivity extends AppCompatActivity {
         BLUE=bundle.getInt("BLUE");
         tileShade=findViewById(R.id.colorBlock);
         tileShade.setBackgroundColor(Color.rgb(RED,GREEN,BLUE));
-        labelcol=(TextView)findViewById(R.id.labelcol);
+        labelcol=(Button)findViewById(R.id.button);
         labelcol.setText("(" + RED + "," + GREEN + "," + BLUE + ")");
         ColorCalculator colores=new ColorCalculator();
         sombras=colores.sombras(RED, GREEN, BLUE);
@@ -138,5 +140,12 @@ public class TilesShadesActivity extends AppCompatActivity {
         tonce=findViewById(R.id.tonce);
         tonce.setBackgroundColor(Color.rgb(tintes[10][0], tintes[10][1], tintes[10][2]));
         System.out.println("Se coloca el ultimo tinte ");
+    }
+    public void llamaSombras(View view){
+        Intent intent=new Intent(getBaseContext(),MainActivity.class);
+        intent.putExtra("RED",RED);
+        intent.putExtra("GREEN",GREEN);
+        intent.putExtra("BLUE",BLUE);
+        startActivity(intent);
     }
 }
